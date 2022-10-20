@@ -63,6 +63,7 @@ export const useStyles=makeStyles((theme)=>({
         }
     },
     decoratorText:{
+        // display:'block',
         position:'absolute',
         lineHeight:'40px',
         left:'20px'
