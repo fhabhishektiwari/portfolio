@@ -19,9 +19,9 @@ export const Decorator = ({ label, widthIcon, Icon, styles }) => {
     )
 }
 
-export const Divider = () => {
+export const Divider = ({style}) => {
     const classes = bodyStyles();
-    return (<Typography component='span' className={classes.divider}></Typography>);
+    return (<Typography component='span' className={classes.divider} style={style}></Typography>);
 }
 
 export const RenderSecionHeading = ({ smallText, heading, description, alignCenter }) => {
@@ -33,7 +33,7 @@ export const RenderSecionHeading = ({ smallText, heading, description, alignCent
             {/*heading*/}
             <Typography variant='h4' align={alignCenter ? 'center' : 'left'} className={classes.sectionHeading}>{heading}</Typography>
             {/*line*/}
-            {Divider()}
+            {Divider({style:alignCenter ? {margin:'8px auto'}:{margin:'8px 0px'}})}
             {/*Descriptions*/}
             <Typography variant='body1' component='h6' align={alignCenter ? 'center' : 'left'} className={classes.sectionText}>{description}</Typography>
         </Box>

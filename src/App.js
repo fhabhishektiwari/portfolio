@@ -5,6 +5,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { HeaderComponents } from './components/headercomponent/HeaderComponents';
 import { AboutUs } from './components/bodycomponent/AboutUs';
+import { Portfolio } from './components/bodycomponent/Portfolio';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <>
     <HeaderComponents/>
     <AboutUs/>
+    <Portfolio/>
     </>
   );
 }
